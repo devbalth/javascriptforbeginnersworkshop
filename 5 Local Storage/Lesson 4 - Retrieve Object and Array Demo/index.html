@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage - Retrieve Object and Array</title>
+</head>
+<body>
+    
+    <h1>Retrieve Object and Array</h1>
+
+    <script>
+
+        /*
+        
+            1 minute
+
+            #1 Log the retrive data of object currentUser and array users
+
+        */
+
+        let user = {
+            username: 'mario27',
+            email: 'mario27@gmail.com'
+        }
+
+        const users = []
+
+        users.push(user);
+
+        user = {
+            username: 'luigi87',
+            email: 'luigi@outlook.com'
+        }
+
+        users.push(user);
+
+        localStorage.setItem('users', JSON.stringify(users));
+
+        let currentUser = { username: '', email: '' }
+
+        users.forEach(user => {
+            console.log(user);
+            currentUser.username = user.username;
+            currentUser.email = user.email;
+        })
+
+        localStorage.setItem('currentUser', JSON.stringify(currentUser));
+
+        // Type your code below
+
+        
+
+
+    </script>
+
+</body>
+</html>
