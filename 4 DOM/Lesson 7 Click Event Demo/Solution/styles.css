@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    width: 300px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.done {
+    background-color: aquamarine;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    width: 300px;
+    margin: 20px auto;
+    cursor: pointer;
+}

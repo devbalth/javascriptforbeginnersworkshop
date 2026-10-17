@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        // 5 minutes
+
+        // 1. Create an array call toDoList with value of undefined and console.log() the variable
+
+        let toDoList;
+
+        console.log(toDoList);
+
+        // 2. Add three task of array item to the array (any method). Use console.log() to output the result.
+
+        toDoList = [
+            'Water the plant',
+            'Wash the car',
+            'Buy food'
+        ]
+
+        console.log(toDoList);
+
+        // 3. Add one task at index 1 but keep the existing array items. Use console.log() to output the result.
+
+        toDoList.splice(1, 0, 'Feed oyen');
+
+        console.log(toDoList);
+
+        // 4. Remove one task at index 3.
+
+        toDoList.splice(3, 1);
+
+        console.log(toDoList);
+
+        // 5. Change/Replace index 2 task with another task. Console.log() to output the result.
+
+        toDoList[2] = 'Jogging';
+
+        console.log(toDoList);
+
+        // 6. Check if 'Learn Objects' is one of your array item, wrap it in console.log()
+
+        console.log(toDoList.includes('Learn Objects'));
+
+        // 7. Check the length of the array item in your array, wrap it in console.log()
+
+        console.log(toDoList.length);
+
+        
+
+    </script>
+</body>
+</html>

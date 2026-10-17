@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+
+        // 5 minutes
+
+        // 1. Create an array and called it myBookList by using const
+
+        const myBookList = [];
+
+        // 2. Create two object items with key/properties of title and author, also add the values. Insert into the myBookList (Do this twice)
+
+        myBookList.push({ title: 'Rat in the lab', author: 'Tim Rat' }, { title: 'Hidden Island', author: 'Brooke William'});
+
+        console.log(myBookList);
+
+        // 3. Use console.log() to log the title of the two array items in myBookList
+
+        console.log(myBookList[0].title);
+        console.log(myBookList[1].title);
+
+        // 4. Change the title and author of index 0 of myBookList
+        
+        myBookList[0].title = 'Even Between Gossips';
+        myBookList[0].author = 'Jane Bittersworth';
+
+        console.log(myBookList)
+
+        // 5. Now add a new key/properties of otherBooks for both object inside the myBookList with no value
+
+        myBookList[0].otherBooks = '';
+        myBookList[1].otherBooks = '';
+
+        console.log(myBookList);
+
+        // 6. For otherBooks properties, create a value which is an array, inside the array create two array items of any book title you can think of
+
+        myBookList[0].otherBooks = ['Have a fun nightmare', 'The long lost pen'];
+        myBookList[1].otherBooks = ['Under the two sun', 'Forever None'];
+
+        console.log(myBookList);
+
+        // 7. Use console.log() to log the index 1, of the otherBooks array of index 0
+
+        console.log(myBookList[1].otherBooks[0]);
+
+    </script>
+</body>
+</html>

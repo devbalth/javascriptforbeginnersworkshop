@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        // 5 minutes
+
+        let logCount = 0;
+
+        function log(arrVariable) {
+            console.log(`${logCount += 1}: ${arrVariable}`);
+        }
+
+        // 1. Create an array called famousYoutubeChannel and create five array items
+
+        let famousYoutubeChannel = ['gameranx', 'linustechtips', 'stephran', 'pewdiepie', 'netninja'];
+        
+        log(famousYoutubeChannel);
+
+        // 2. Replace/Overwrite index 3 to another famous youtube channel
+
+        famousYoutubeChannel[2] = 'lifeofriza';
+        
+        log(famousYoutubeChannel);
+
+        // 3. Pick any of the array item and find out the index
+
+        log(famousYoutubeChannel.indexOf('pewdiepie'));
+
+        // 4. Check if value "bizarrebob" is available in the array
+
+        log(famousYoutubeChannel.includes('bizarrebob'));
+
+        // 5. Find out the length of famousYoutubeChannel
+
+        log(famousYoutubeChannel.length);
+
+        // 6. Add one array item at the beginning and at the end
+
+        famousYoutubeChannel.unshift('theradbrad');
+
+        famousYoutubeChannel.push('mrbeast');
+
+        log(famousYoutubeChannel);
+
+        // 7. Add one array item at index 3 but still keep the existing array items
+
+        famousYoutubeChannel.splice(3, 0, 'kktamina')
+
+        log(famousYoutubeChannel);
+
+        // 8. Remove the beginning and end of the array
+
+        famousYoutubeChannel.pop();
+        famousYoutubeChannel.shift();
+
+        log(famousYoutubeChannel);
+
+        // 9. Remove the index 1 and then add on "nukestop5"
+
+        famousYoutubeChannel.splice(1, 1, 'nukestop5');
+
+        log(famousYoutubeChannel)
+
+        // 10. Remove the index 1 only
+
+        famousYoutubeChannel.splice(1, 1);
+
+        log(famousYoutubeChannel);
+
+
+
+        
+
+    </script>
+</body>
+</html>

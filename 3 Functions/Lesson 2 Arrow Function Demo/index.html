@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        
+            1 minute
+            
+            #1 Turn the basic function and make it into an arrow function instead
+    
+
+        */ 
+
+        // Type your code below:
+
+        const users = [
+            'Mario',
+            'Luigi',
+            'Bowser',
+            'Yoshi',
+            'Daisy'
+        ];
+
+        function greet(user) {
+            user.forEach(person => {
+                console.log(`Hello and welcome back, ${person}`);
+            })
+        }
+
+        greet(users);
+
+        const anotherUsers = [
+            'theradbrad', 
+            'gameranx', 
+            'john doe', 
+            'john wick',
+            'potter'
+        ]
+
+        greet(anotherUsers)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+
+        /*
+
+            5 minutes
+
+            # 1. Create a variable of customerInternetCafeLimit with number value of 20
+
+            # 2. Use for loop to repeat the current customer from the start and stop when reaching the limit
+                 Log the amount of customer and 'There are still x amount of seats left'
+                 Log 'Unfortunately there is no seats available' when reaching the limit of 20
+                 Make sure log is only once not both 'Ther are still..' and 'Unfortunately..'
+                 meaning there shouldn't be double of 20
+        
+        */
+
+        // Type your solutions below:
+
+        let customerInternetCafeLimit = 20;
+
+        for(let i = 0; i <= customerInternetCafeLimit; i++){
+            if(i !== customerInternetCafeLimit) {
+                console.log(`Current customer: ${i} - There are still ${customerInternetCafeLimit - i} amount of seats left`);
+            }
+            
+            if(i === customerInternetCafeLimit){
+                console.log(`Current customer: ${i} - Unfortunately there is no seats available`)
+            }
+        }
+
+    </script>
+</body>
+</html>

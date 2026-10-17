@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operator</title>
+</head>
+<body>
+    <script>
+
+        /*
+
+            3 minutes
+
+            # 1. For the array items of invitation (channels), push only if:
+                 
+                 a) The rating is 8 and above
+                 b) Gameranx and Linus Tech Tips to be included
+                    no matter the rating
+                 c) Ignore Burnt Peanut
+
+            # 2. Use console.log() to log the invitation array
+            
+        
+        */
+
+        // Type your solutions below:
+
+        const youtubeChannel = [
+            { channel: 'Bizarre Bob', rating: 9 },
+            { channel: 'Nukes top 5', rating: 8 },
+            { channel: 'Gameranx', rating: 7.5 },
+            { channel: 'Linus Tech Tips', rating: 6.5 },
+            { channel: 'MrBeast', rating: 8 },
+            { channel: 'Burnt Peanut', rating: 10 },
+            { channel: 'LifeOfRiza', rating: 7.5 },
+            { channel: 'StephRan', rating: 7 }
+        ]
+
+        const invitation = [];
+
+        for(const invites of youtubeChannel){
+
+            if(invites.channel === 'Gameranx' || invites.channel === 'Linus Tech Tips'){
+                invitation.push(invites.channel);
+            } 
+            
+            if(invites.rating < 8 || invites.channel === 'Burnt Peanut') {
+                continue;
+            }
+
+            invitation.push(invites.channel);
+
+        }
+
+        console.log(invitation);
+
+        
+        
+
+    </script>
+</body>
+</html>

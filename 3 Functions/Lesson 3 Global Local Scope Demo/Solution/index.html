@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and Local Scope</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        
+            2 minutes
+            
+            #1 Create a global variable name globalCounter and number value of 1
+
+            #2 Create a function call local and code block of variable localCounter 
+               with number value of 100
+
+            #3 Inside the function of local, log the globalCounter by using
+               'This is from Global Counter variable: globalCounter Value'
+
+            #4 Call the function and use console.log() to log the localCounter
+    
+
+        */ 
+
+        // Type your code below:
+
+        const globalCounter = 1;
+
+        function local(){
+            const localCounter = 100;
+            console.log(`This is from Global Counter variable: ${globalCounter}`);
+        }
+
+        local();
+
+        console.log(localCounter)
+
+    </script>
+</body>
+</html>
